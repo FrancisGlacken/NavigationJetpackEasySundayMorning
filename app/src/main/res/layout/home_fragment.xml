@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/design_default_color_primary_dark">
+
+    <TextView
+        android:id="@+id/homeView"
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HOME"
+        android:textColor="@color/colorAccent"
+        android:textSize="70sp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toAlternateFragmentButton"
+        android:text="To AlternateActivity"
+        app:layout_constraintTop_toBottomOf="@+id/homeView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
