@@ -17,5 +17,9 @@
         android:id="@+id/alternateFragment"
         android:name="com.deltorostudios.navigationjetpackeasysundaymorning.AlternateFragment"
         android:label="alternate_fragment"
-        tools:layout="@layout/alternate_fragment" />
+        tools:layout="@layout/alternate_fragment" >
+        <action
+            android:id="@+id/action_alternateFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
