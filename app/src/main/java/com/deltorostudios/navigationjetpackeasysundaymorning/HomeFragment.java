@@ -13,6 +13,7 @@ import javax.xml.namespace.NamespaceContext;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.navigation.ui.NavigationUI;
 
 public class HomeFragment extends Fragment {
 
@@ -27,6 +28,8 @@ public class HomeFragment extends Fragment {
 
         Button changeButton = view.findViewById(R.id.toAlternateFragmentButton);
         CustomObject object = new CustomObject(1, "Fran", "Good looking");
+
+
 
         changeButton.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_alternateFragment, null));
 //        changeButton.setOnClickListener(new View.OnClickListener() {
