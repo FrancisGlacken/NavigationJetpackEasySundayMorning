@@ -10,7 +10,7 @@
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
         <action
-            android:id="@+id/action_homeFragment_to_alternateFragment"
+            android:id="@+id/toSettingsAction"
             app:destination="@id/settingsDestination"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
@@ -23,11 +23,15 @@
         android:label="alternate_fragment"
         tools:layout="@layout/alternate_fragment" >
         <action
-            android:id="@+id/action_alternateFragment_to_homeFragment"
+            android:id="@+id/toHomeAction"
             app:destination="@id/homeDestination"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"/>
+        <argument
+            android:name="receiveStringArg"
+            app:argType="string"
+            android:defaultValue="String Argument" />
     </fragment>
 </navigation>
